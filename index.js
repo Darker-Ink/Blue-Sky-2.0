@@ -37,11 +37,13 @@ scommandFolders.forEach((x) => {
 				description: scommand.description,
 				options: scommand.options,
 			};
-			console.log(scommand.options)
+			console.log(scommand.name + ' Has Loaded')
+			await client.guilds.fetch('827204137829007361')
 			await client.guilds.fetch('639477525927690240')
 			setTimeout(async() => {
-			const sscommand = await client.guilds.cache.get('639477525927690240')?.commands.create(data);
-			}, 1000);
+			await client.guilds.cache.get('827204137829007361')?.commands.create(data);
+			await client.guilds.cache.get('639477525927690240')?.commands.create(data);
+			}, 3000);
 		})()
 	});
 });

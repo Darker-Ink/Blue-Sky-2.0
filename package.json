@@ -1,6 +1,6 @@
 {
   "dependencies": {
-    "discord.js": "^13.0.0-dev.t1627686972.d2757cf",
+    "discord.js": "^13.0.0-dev.t1627778678.74fc23b",
     "express": "^4.17.1"
   }
 }
